@@ -30,11 +30,9 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
             logoanimation.start()
             img.startAnimation(twinAnimation)
         }
-        else
-        {
+        else {
             logoanimation.stop()
         }
-
     }
     override fun onAnimationStart(p0: Animation?) {
     }
