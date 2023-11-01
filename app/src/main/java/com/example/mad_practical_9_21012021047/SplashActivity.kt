@@ -17,9 +17,9 @@ class SplashActivity : AppCompatActivity(),AnimationListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        var image:ImageView = findViewById(R.id.uvpce_logo)
-        image.setBackgroundResource(R.drawable.uvpce_animation_list)
-        logoanimation = image.background as AnimationDrawable
+        img = findViewById<ImageView>(R.id.uvpce_logo)
+        img.setBackgroundResource(R.drawable.uvpce_animation_list)
+        logoanimation = img.background as AnimationDrawable
         twinAnimation = AnimationUtils.loadAnimation(this, R.anim.twin_animation)
         twinAnimation.setAnimationListener(this)
     }
